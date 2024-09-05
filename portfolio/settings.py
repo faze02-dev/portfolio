@@ -77,8 +77,13 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        # 'URL': postgresql://postgres:KrxcqIENKUNjIlIVObXrqnuogiMxeLRa@autorack.proxy.rlwy.net:56674/railway
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'KrxcqIENKUNjIlIVObXrqnuogiMxeLRa psql',
+        'HOST': 'autorack.proxy.rlwy.net',
+        'PORT': '56674',
     }
 }
 
